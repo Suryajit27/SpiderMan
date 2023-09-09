@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpiderMan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="loading-screen">
+        <img src="assets\spidermanlogo1.svg" alt="spidey logo" id="Loading_Spidey">
+        <img src="assets\spidermanlogo1.svg" alt="spidey logo" id="Loading_Spidey">
+        <img src="assets\spidermanlogo1.svg" alt="spidey logo" id="Loading_Spidey">
+        <img src="assets\spidermanlogo1.svg" alt="spidey logo" id="Loading_Spidey">
+    </div>
+    
+
+    <div class="homepage hidden">
+        <div class="background-image">
+            <img src="assets\Default_Design.jpg" alt="Background Image" id="background-img">
+            
+        </div>
+        <div class="animation-wrapper">
+            <div class="particle particle-1"></div>
+            <div class="particle particle-2"></div>
+            <div class="particle particle-3"></div>
+            <div class="particle particle-4"></div>
+          </div>
+        <div class="morales-animation">
+            <img src="assets\miles.png" alt="spidey miles" id="miles" class="miles-animation">
+            <p class="text1" id="text1">SPIDER</p>
+            <p class="text2" id="text2">MAN</p>
+        </div>
+    </div>
+    <script>
+        // Function to hide the loading screen after a minimum of 5 seconds
+        function hideLoadingScreen() {
+            const loadingScreen = document.querySelector('.loading-screen');
+            const homepage = document.querySelector('.homepage');
+            loadingScreen.style.opacity = '0';
+            homepage.classList.remove('hidden');
+        }
+
+        // Ensure the loading screen is visible for at least 5 seconds
+        setTimeout(hideLoadingScreen, 5000);
+
+    </script>
+    
+
+
+</body>
+
+</html>
